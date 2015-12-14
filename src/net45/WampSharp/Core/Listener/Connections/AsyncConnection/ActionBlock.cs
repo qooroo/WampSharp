@@ -1,9 +1,8 @@
 using System;
-using System.Linq;
+using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using System.Reactive.Threading.Tasks;
 using System.Threading.Tasks;
-using WampSharp.Core.Utilities;
 
 namespace WampSharp.Core.Listener
 {
@@ -18,13 +17,10 @@ namespace WampSharp.Core.Listener
 
         public ActionBlock(Func<TInput, Task> action)
         {
-            mCompletion =
-                mSubject
-                    .ToAsyncEnumerable()
-                    .SelectMany(x => action(x)
-                                    .ContinueWithNull()
-                                    .ToAsyncEnumerable())
-                    .Count();
+            mSubject.Select(x => Observable.FromAsync(() => action(x)))
+                .Concat()
+                .Count()
+                .ToTask();
         }
 
         public Task Completion

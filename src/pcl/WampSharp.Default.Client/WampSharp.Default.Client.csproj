@@ -65,10 +65,8 @@
       <Name>WampSharp.NewtonsoftJson</Name>
     </ProjectReference>
     <ProjectReference Include="..\Default\WampSharp.Windows\WampSharp.Windows.csproj">
-      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
-      <Targets>$(ProjectReferenceBuildTargets)</Targets>
+      <Project>{c00c068f-67a2-41fa-8608-8407c1a74526}</Project>
       <Name>WampSharp.Windows</Name>
-      <Project>{C00C068F-67A2-41FA-8608-8407C1A74526}</Project>
     </ProjectReference>
     <ProjectReference Include="..\WampSharp\WampSharp.csproj">
       <Project>{653A76DC-00D7-4EFF-A25E-2FA10C5C927D}</Project>
