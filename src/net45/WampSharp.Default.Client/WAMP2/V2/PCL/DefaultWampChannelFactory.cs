@@ -2,6 +2,7 @@
 using WampSharp.Binding;
 using WampSharp.V2.Binding;
 using WampSharp.V2.Client;
+using WampSharp.WebsocketsPcl;
 
 namespace WampSharp.V2
 {
