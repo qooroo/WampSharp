@@ -2,7 +2,6 @@
 using WampSharp.Binding;
 using WampSharp.V2.Binding;
 using WampSharp.V2.Client;
-using WampSharp.Windows;
 
 namespace WampSharp.V2
 {
