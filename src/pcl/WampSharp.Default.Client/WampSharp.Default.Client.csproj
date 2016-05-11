@@ -64,6 +64,10 @@
       <Project>{2DBD5996-521B-4BD2-9ECF-35C5B9BC1A59}</Project>
       <Name>WampSharp.NewtonsoftJson</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Default\WampSharp.WebSocketPortable\WampSharp.WebsocketPortable.csproj">
+      <Project>{77E6338F-6FD2-4FC8-9788-6587D5572332}</Project>
+      <Name>WampSharp.WebsocketPortable</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Default\WampSharp.Windows\WampSharp.Windows.csproj">
       <Project>{c00c068f-67a2-41fa-8608-8407c1a74526}</Project>
       <Name>WampSharp.Windows</Name>
