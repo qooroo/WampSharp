@@ -64,11 +64,9 @@
       <Project>{2DBD5996-521B-4BD2-9ECF-35C5B9BC1A59}</Project>
       <Name>WampSharp.NewtonsoftJson</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Default\WampSharp.Windows\WampSharp.Windows.csproj">
-      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
-      <Targets>$(ProjectReferenceBuildTargets)</Targets>
-      <Name>WampSharp.Windows</Name>
-      <Project>{C00C068F-67A2-41FA-8608-8407C1A74526}</Project>
+    <ProjectReference Include="..\WampSharp.WebsocketsPcl\WampSharp.WebsocketsPcl.csproj">
+      <Project>{D8216019-15DE-4055-9A84-5DACFA514457}</Project>
+      <Name>WampSharp.WebsocketsPcl</Name>
     </ProjectReference>
     <ProjectReference Include="..\WampSharp\WampSharp.csproj">
       <Project>{653A76DC-00D7-4EFF-A25E-2FA10C5C927D}</Project>

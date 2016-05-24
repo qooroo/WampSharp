@@ -2,7 +2,7 @@
 using WampSharp.Binding;
 using WampSharp.V2.Binding;
 using WampSharp.V2.Client;
-using WampSharp.Windows;
+using WampSharp.WebsocketsPcl;
 
 namespace WampSharp.V2
 {
@@ -26,7 +26,7 @@ namespace WampSharp.V2
                                                     IWampTextBinding<TMessage> binding)
         {
             var connection =
-                new MessageWebSocketTextConnection<TMessage>(address, binding);
+                new PclWebSocketTextConnection<TMessage>(address, binding);
 
             return this.CreateChannel(realm, connection, binding);
         }
@@ -46,7 +46,7 @@ namespace WampSharp.V2
                                                     IWampClientAuthenticator authenticator)
         {
             var connection =
-                new MessageWebSocketTextConnection<TMessage>(address, binding);
+                new PclWebSocketTextConnection<TMessage>(address, binding);
 
             return this.CreateChannel(realm, connection, binding, authenticator);
         }
