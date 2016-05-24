@@ -5,29 +5,20 @@
     <authors>CodeSharp</authors>
     <owners />
     <dependencies>
-      <group>
+      <group targetFramework="portable-net45+netcore45">
         <dependency id="WampSharp.NewtonsoftJson" version="[$version$]" />
-        <dependency id="WampSharp.NewtonsoftMsgpack" version="[$version$]" />
-        <dependency id="WampSharp.WebSocket4Net" version="[$version$]" />
-      </group>
-      <group targetFramework="portable-win81+wpa81">
-        <dependency id="WampSharp.NewtonsoftJson" version="[$version$]" />
-        <dependency id="WampSharp.Windows" version="[$version$]" />
+        <dependency id="WampSharp.WebsocketsPcl" version="[$version$]" />
       </group>
     </dependencies>
     <id>WampSharp.Default.Client</id>
     <title>WampSharp default client binding</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>WampSharp above Newtonsoft.Json, Newtonsoft.Msgpack and WebSocket4Net</description>
-    <projectUrl>https://github.com/Code-Sharp/WampSharp/</projectUrl>
-    <tags>websockets wampws rpc pubsub newtonsoft json msgpack wampv2</tags>
+    <description>WampSharp above Newtonsoft.Json and Websockets.PCL</description>
+    <projectUrl>https://github.com/qooroo/WampSharp/</projectUrl>
+    <tags>websockets wampws rpc pubsub newtonsoft json wampv2</tags>
   </metadata>
   <files>
-    <file src="bin\net45\WampSharp.Default.Client.dll" target="lib\net45\WampSharp.Default.Client.dll" />
-    <file src="bin\net45\WampSharp.Default.Client.xml" target="lib\net45\WampSharp.Default.Client.xml" />
-    <file src="bin\net40\WampSharp.Default.Client.dll" target="lib\net40\WampSharp.Default.Client.dll" />
-    <file src="bin\net40\WampSharp.Default.Client.xml" target="lib\net40\WampSharp.Default.Client.xml" />
-    <file src="bin\pcl\WampSharp.Default.Client.dll" target="lib\portable-win81+wpa81\WampSharp.Default.Client.dll" />
-    <file src="bin\pcl\WampSharp.Default.Client.xml" target="lib\portable-win81+wpa81\WampSharp.Default.Client.xml" />
+    <file src="bin\pcl\WampSharp.Default.Client.dll" target="lib\portable-net45+netcore45\WampSharp.Default.Client.dll" />
+    <file src="bin\pcl\WampSharp.Default.Client.xml" target="lib\portable-net45+netcore45\WampSharp.Default.Client.xml" />
   </files>
 </package>
