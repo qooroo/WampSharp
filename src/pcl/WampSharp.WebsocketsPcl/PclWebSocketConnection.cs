@@ -59,9 +59,10 @@ namespace WampSharp.WebsocketsPcl
 
         protected override void Dispose()
         {
-            WebSocket.Dispose();
+            WebSocket?.Dispose();
         }
     }
+
     public class PclWebSocketTextConnection<TMessage> : PclWebSocketConnection<TMessage>
     {
         private readonly IWampTextBinding<TMessage> _mTextBinding;
